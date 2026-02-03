@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>M-DEE'S Salon & Beauty Spa</title>
+
+<style>
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:#fff8fb;color:#333}
+header{background:linear-gradient(135deg,#b83280,#f472b6);color:#fff;text-align:center;padding:70px 20px}
+header h1{margin:0;font-size:2.6rem}
+section{padding:50px 20px;max-width:1100px;margin:auto}
+h2{text-align:center;color:#b83280;margin-bottom:30px}
+.services,.gallery,.prices,.testimonials{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.card,img{background:#fff;padding:20px;border-radius:12px;box-shadow:0 4px 10px rgba(0,0,0,.08);text-align:center}
+img{padding:0;height:220px;object-fit:cover}
+.button{display:inline-block;margin:10px;padding:12px 26px;background:#b83280;color:#fff;text-decoration:none;border-radius:30px;font-weight:bold}
+.whatsapp{background:#25D366}
+.contact,.booking,.hours{background:#fde7f3;border-radius:14px;padding:40px 20px;text-align:center}
+form input,form textarea{width:100%;max-width:420px;padding:10px;margin:8px;border-radius:6px;border:1px solid #ccc}
+form button{padding:12px 28px;border:none;border-radius:30px;background:#b83280;color:#fff;font-weight:bold;cursor:pointer}
+footer{background:#b83280;color:#fff;text-align:center;padding:25px}
+</style>
+
+<script>
+function bookWhatsApp(){
+  let name=document.getElementById('name').value;
+  let phone=document.getElementById('phone').value;
+  let service=document.getElementById('service').value;
+  let time=document.getElementById('time').value;
+  let msg=`Hello M-DEE'S Salon,%0AName: ${name}%0APhone: ${phone}%0AService: ${service}%0APreferred time: ${time}`;
+  window.open(`https://wa.me/254704068060?text=${msg}`,'_blank');
+}
+</script>
+</head>
+
+<body>
+
+<header>
+<h1>M-DEE'S SALON & BEAUTY SPA</h1>
+<p>Your beauty, our passion</p>
+<p>Eastern Bypass – Ruiru, Membly OJ</p>
+<a class="button whatsapp" href="https://wa.me/254704068060">Book via WhatsApp</a>
+</header>
+
+<section>
+<h2>Our Services</h2>
+<div class="services">
+<div class="card">Sister Locks Retie</div>
+<div class="card">Micro‑Locks</div>
+<div class="card">Dread Locks</div>
+<div class="card">Artificial Locks</div>
+<div class="card">Make‑Up</div>
+<div class="card">Manicure & Pedicure</div>
+<div class="card">Facials</div>
+<div class="card">Braiding & Ghanaians</div>
+<div class="card">Kids Up‑Do</div>
+<div class="card">Gel Polish, Acrylics & Tips</div>
+<div class="card">Lashes</div>
+<div class="card">House Call Services</div>
+</div>
+</section>
+
+<section>
+<h2>Price Guide</h2>
+<div class="prices">
+<div class="card">Braiding – From KES 1,500</div>
+<div class="card">Sister Locks Retie – From KES 3,000</div>
+<div class="card">Manicure & Pedicure – From KES 1,200</div>
+<div class="card">Make‑Up – From KES 2,000</div>
+<div class="card">Gel & Acrylic Nails – From KES 2,500</div>
+<div class="card">House Call – Price on Request</div>
+</div>
+</section>
+
+<section>
+<h2>Gallery</h2>
+<div class="gallery">
+<img src="https://via.placeholder.com/400x300?text=Hair+Styles">
+<img src="https://via.placeholder.com/400x300?text=Nails">
+<img src="https://via.placeholder.com/400x300?text=Makeup">
+<img src="https://via.placeholder.com/400x300?text=Spa">
+</div>
+<p style="text-align:center">*Replace images with your real salon photos*</p>
+</section>
+
+<section class="booking">
+<h2>Book an Appointment</h2>
+<form onsubmit="event.preventDefault();bookWhatsApp();">
+<input id="name" placeholder="Your Name" required>
+<input id="phone" placeholder="Phone Number" required>
+<input id="service" placeholder="Service Required">
+<textarea id="time" placeholder="Preferred Date & Time"></textarea>
+<button type="submit">Send Booking via WhatsApp</button>
+</form>
+</section>
+
+<section>
+<h2>What Our Clients Say</h2>
+<div class="testimonials">
+<div class="card">“Excellent service and friendly staff. Highly recommended!”</div>
+<div class="card">“Best nail work and locks retie in Ruiru.”</div>
+<div class="card">“Very professional and clean environment.”</div>
+</div>
+</section>
+
+<section class="hours">
+<h2>Business Hours</h2>
+<p>Monday – Saturday: 8:00 AM – 7:00 PM</p>
+<p>Sunday: By Appointment</p>
+</section>
+
+<section class="contact">
+<h2>Contact & Location</h2>
+<p><strong>Phone:</strong> +254 704 068 060</p>
+<a class="button" href="tel:+254704068060">Call Now</a>
+<br><br>
+<iframe src="https://www.google.com/maps?q=Ruiru%20Eastern%20Bypass&output=embed" width="100%" height="300" style="border:0"></iframe>
+</section>
+
+<footer>
+<p>Follow Us:</p>
+<p>
+<a href="#" style="color:white">Instagram</a> | 
+<a href="#" style="color:white">TikTok</a> | 
+<a href="#" style="color:white">Facebook</a>
+</p>
+<p>© 2026 M-DEE'S Salon & Beauty Spa</p>
+</footer>
+
+</body>
+</html>
